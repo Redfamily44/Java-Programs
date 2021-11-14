@@ -37,6 +37,36 @@ public class WritingFile {
 		scan.close();
 		file.close();
 	
+		
+		package com.eashwar;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class ReadFile {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+		File readfile=new File("firstfile.txt");
+		if(readfile.exists()) {
+			Scanner scan=new Scanner(readfile);
+			
+		while(scan.hasNext()) {
+			System.out.println(scan.nextLine());
+		}
+			
+			scan.close();
+		}
+		else {
+			System.out.println("file does not exits now ");		
+		}
+	
+		
+	}
+
+}
+
+
 
 	}
 
